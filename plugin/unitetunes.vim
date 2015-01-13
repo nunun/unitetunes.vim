@@ -4,7 +4,7 @@
 if exists('g:loaded_unitetunes')
   finish
 elseif v:version < 703
-  echoerr 'unite.vim does not work this version of Vim "' . v:version . '".'
+  echoerr 'unitetunes.vim does not work on Vim "' . v:version . '".'
   finish
 endif
 
@@ -154,20 +154,20 @@ let g:unite_source_menu_menus.shortcut = {
 \   "candidates"  : [
 \       ["tabmove 0    (tab move first)",                 "tabm0"],
 \       ["tabmove 1000 (tab move last)",                  "tabm1000"],
+\       ["[^p] CtrlP",                                    "CtrlP"],
 \       ["git",                                           "UniteMenuNest menu:version_controls_git"],
 \       ["svn",                                           "UniteMenuNest menu:version_controls_svn"],
 \       ["OmniSharp GotoDefinition (.cs only)",           "tab split | OmniSharpGotoDefinition"],
 \       ["          StartServer    (.cs only)",           "OmniSharpStartServer"],
 \       ["NeoComplCache Enable  (enable  neocomplcache)", "NeoComplCacheUnlock | NeoComplCacheEnable"],
 \       ["              Disable (disable neocomplcache)", "NeoComplCacheDisable | NeoComplCacheLock "],
+\       ["[sg] OpenBrowserSmartSearch",                   "call openbrowser#_keymapping_smart_search('n')"],
+\       ["[^-][^-] toggle comment",                       "TComment"],
 \       ["[sr] toggle line",                              "normal sr"],
 \       ["[st] toggle tabspace",                          "normal st"],
 \       ["[sT] toggle tabchar",                           "normal sT"],
 \       ["[qa] record macro (@a), [q] to quit record",    "normal qa"],
 \       ["[@a] execute macro (@a)",                       "normal @a"],
-\       ["[^-][^-] toggle comment",                       "TComment"],
-\       ["OpenBrowserSmartSearch",                        "call openbrowser#_keymapping_smart_search('n')"],
-\       ["VimFiler",                                      "tab split | VimFilerBufferDir"],
 \       ["file_mru",                                      "UniteMenuNest file_mru"],
 \       ["history/yank",                                  "UniteMenuNest history/yank"],
 \       ["vimgrep",                                       "UniteMenuNest vimgrep"],
@@ -185,6 +185,7 @@ let g:unite_source_menu_menus.shortcut = {
 \}
 "["NeoComplCacheUnlock  (enable neocomplcache)",  "NeoComplCacheUnlock"],
 "["NeoComplCacheLock    (disable neocomplcache)", "NeoComplCacheLock"],
+"["VimFiler",                                     "tab split | VimFilerBufferDir"],
 
 " Unite menu:version_controls_git
 let g:unite_source_menu_menus.version_controls_git = {
