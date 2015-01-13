@@ -155,6 +155,7 @@ let g:unite_source_menu_menus.shortcut = {
 \       ["tabmove 0    (tab move first)",                 "tabm0"],
 \       ["tabmove 1000 (tab move last)",                  "tabm1000"],
 \       ["[^p] CtrlP",                                    "CtrlP"],
+\       ["CtrlPClearAllCaches",                           "CtrlPClearAllCaches"],
 \       ["git",                                           "UniteMenuNest menu:version_controls_git"],
 \       ["svn",                                           "UniteMenuNest menu:version_controls_svn"],
 \       ["OmniSharp GotoDefinition (.cs only)",           "tab split | OmniSharpGotoDefinition"],
