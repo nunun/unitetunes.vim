@@ -160,6 +160,7 @@ let g:unite_source_menu_menus.shortcut = {
 \       ["     CtrlP ClearCache",                         "CtrlPClearCache"],
 \       ["git",                                           "UniteMenuNest menu:version_controls_git"],
 \       ["svn",                                           "UniteMenuNest menu:version_controls_svn"],
+\       ["VimFiler",                                      "tab split | VimFilerBufferDir"],
 \       ["OmniSharp GotoDefinition (.cs only)",           "tab split | OmniSharpGotoDefinition"],
 \       ["          StartServer    (.cs only)",           "OmniSharpStartServer"],
 \       ["NeoComplCache Enable  (enable  neocomplcache)", "NeoComplCacheUnlock | NeoComplCacheEnable"],
@@ -188,7 +189,6 @@ let g:unite_source_menu_menus.shortcut = {
 \}
 "["NeoComplCacheUnlock  (enable neocomplcache)",  "NeoComplCacheUnlock"],
 "["NeoComplCacheLock    (disable neocomplcache)", "NeoComplCacheLock"],
-"["VimFiler",                                     "tab split | VimFilerBufferDir"],
 
 " Unite menu:version_controls_git
 let g:unite_source_menu_menus.version_controls_git = {
