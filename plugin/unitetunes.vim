@@ -103,7 +103,7 @@ function! UniteMenuToggle(root_menu_name)
 	let unite = unite#get_current_unite()
 	if unite == {} || !exists("t:unite")
 		exec "Unite -wrap -multi-line -silent menu:". a:root_menu_name
-	elseif unite.is_finalized == 1
+	elseif unite#get_unite_winnr(unite.buffer_name) < 0 "|| unite.is_finalized == 1
 		UniteResume -silent
 	else
 		UniteClose default
@@ -154,11 +154,13 @@ let g:unite_source_menu_menus.shortcut = {
 \   "candidates"  : [
 \       ["tabmove 0    (tab move first)",                 "tabm0"],
 \       ["tabmove 1000 (tab move last)",                  "tabm1000"],
+\       ["VimFiler",                                      "VimFilerBufferDir -tab -auto-cd"],
+\       ["[?] VimGrep",                                   "VimGrep"],
+\       ["    Qfreplace",                                 "Qfreplace"],
 \       ["[^p] CtrlP",                                    "CtrlP"],
 \       ["     CtrlP Buffer",                             "CtrlPBuffer"],
 \       ["     CtrlP Line",                               "CtrlPLine"],
 \       ["     CtrlP ClearCache",                         "CtrlPClearCache"],
-\       ["VimFiler",                                      "tab split | VimFilerBufferDir"],
 \       ["git",                                           "UniteMenuNest menu:version_controls_git"],
 \       ["svn",                                           "UniteMenuNest menu:version_controls_svn"],
 \       ["OmniSharp GotoDefinition (.cs only)",           "tab split | OmniSharpGotoDefinition"],
