@@ -28,6 +28,7 @@ autocmd FileType unite call s:unite_my_settings()
 function! s:unite_my_settings()
 	nmap <buffer> q :UniteMenuBack shortcut<CR>
 	nmap <buffer> Q :UniteClose default<CR>
+	nmap <buffer> <C-c> :UniteClose default<CR>
 	"nmap <buffer> su <Nop>
 	"nmap <buffer> sU <Nop>
 	autocmd CursorMoved  <buffer> :call UniteCursorMoved()
@@ -154,9 +155,10 @@ let g:unite_source_menu_menus.shortcut = {
 \   "candidates"  : [
 \       ["tabmove 0    (tab move first)",                 "tabm0"],
 \       ["tabmove 1000 (tab move last)",                  "tabm1000"],
-\       ["VimFiler",                                      "VimFilerBufferDir -tab -auto-cd -status"],
-\       ["[?] VimGrep",                                   "VimGrep"],
-\       ["    Qfreplace",                                 "Qfreplace"],
+\       ["VimFiler BufferDir",                            "VimFilerBufferDir -tab -auto-cd -status"],
+\       ["         Project",                              "VimFilerBufferDir -tab -auto-cd -status -project"],
+\       [" [?] VimGrep",                                  "VimGrep"],
+\       ["     Qfreplace",                                "Qfreplace"],
 \       ["[^p] CtrlP",                                    "CtrlP"],
 \       ["     CtrlP Buffer",                             "CtrlPBuffer"],
 \       ["     CtrlP Line",                               "CtrlPLine"],
@@ -173,7 +175,7 @@ let g:unite_source_menu_menus.shortcut = {
 \       ["[sr] toggle line",                              "normal sr"],
 \       ["[st] toggle tabspace",                          "normal st"],
 \       ["[sT] toggle tabchar",                           "normal sT"],
-\       ["[qa] record macro (@a), [q] to quit record",    "normal qa"],
+\       ["[qa] record  macro (@a), [q] to quit record",   "normal qa"],
 \       ["[@a] execute macro (@a)",                       "normal @a"],
 \       ["file_mru",                                      "UniteMenuNest file_mru"],
 \       ["history/yank",                                  "UniteMenuNest history/yank"],
