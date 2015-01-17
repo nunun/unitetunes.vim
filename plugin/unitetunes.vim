@@ -182,16 +182,13 @@ let g:unite_source_menu_menus.shortcut = {
 \       ["quickrun (QuickRun)",                           "QuickRun"],
 \       ["line",                                          "UniteMenuNest -start-insert line"],
 \       ["source",                                        "UniteMenuNest source"],
-\       ["vimrc",                                         "UniteMenuNest menu:vimrc"],
-\       ["neobundle",                                     "UniteMenuNest neobundle"],
-\       ["  NeoBundleList",                               "NeoBundleList"],
-\       ["  NeoBundleInstall",                            "NeoBundleInstall"],
-\       ["  NeoBundleClean",                              "NeoBundleClean"],
-\       ["  NeoBundleUpdate",                             "NeoBundleUpdate"],
+\       ["open .vimrc",                                   $HOME. "/.vimrc"],
+\       ["NeoBundle List",                                "NeoBundleList"],
+\       ["          Install",                             "NeoBundleInstall"],
+\       ["          Clean",                               "NeoBundleClean"],
+\       ["          Update",                              "NeoBundleUpdate"],
 \   ],
 \}
-"["NeoComplCacheUnlock  (enable neocomplcache)",  "NeoComplCacheUnlock"],
-"["NeoComplCacheLock    (disable neocomplcache)", "NeoComplCacheLock"],
 
 " Unite menu:version_controls_git
 let g:unite_source_menu_menus.version_controls_git = {
@@ -215,16 +212,6 @@ let g:unite_source_menu_menus.version_controls_svn = {
 \   ],
 \}
 
-" Unite menu:vimrc
-let g:unite_source_menu_menus.vimrc = {
-\   "description" : "vimrc",
-\   "map"         : function("UniteMap"),
-\   "candidates"  : [
-\       ["vimrc",          $HOME. "/.vimrc"],
-\       ["vimrc.registry", g:vimrc_registry],
-\   ],
-\}
-
 "BACKUP
 "["register","UniteMenuNest register"],
 "["outline","UniteMenuNest outline"],
@@ -234,6 +221,19 @@ let g:unite_source_menu_menus.vimrc = {
 "["vimrc.registry",$HOME."/.vimrc.registry.".$VIM_PLATFORM],
 "["neobundles",s:neobundle_root],
 "["OpenUrl","OpenBrowser <url>"],
+"" Unite menu:vimrc
+"let g:unite_source_menu_menus.vimrc = {
+"\   "description" : "vimrc",
+"\   "map"         : function("UniteMap"),
+"\   "candidates"  : [
+"\       ["vimrc",          $HOME. "/.vimrc"],
+"\       ["vimrc.registry", g:vimrc_registry],
+"\   ],
+"\}
+"["NeoComplCacheUnlock  (enable neocomplcache)",  "NeoComplCacheUnlock"],
+"["NeoComplCacheLock    (disable neocomplcache)", "NeoComplCacheLock"],
+"["neobundle", "UniteMenuNest neobundle"],
+"["vimrc", "UniteMenuNest menu:vimrc"],
 
 let g:loaded_unitetunes = 1
 let &cpo = s:save_cpo
