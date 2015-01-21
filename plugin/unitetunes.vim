@@ -168,8 +168,9 @@ let g:unite_source_menu_menus.shortcut = {
 \       ["OmniSharp GotoDefinition (.cs only)",           "tab split | OmniSharpGotoDefinition"],
 \       ["          StartServer    (.cs only)",           "OmniSharpStartServer"],
 \       ["          Rename         (.cs only)",           "OmniSharpRename"],
-\       ["NeoComplCache Enable  (enable  neocomplcache)", "NeoComplCacheUnlock | NeoComplCacheEnable"],
-\       ["              Disable (disable neocomplcache)", "NeoComplCacheDisable | NeoComplCacheLock "],
+\       ["[ac], [ic]  A/Inner Comment",                   "normal ac"],
+\       ["[a,], [i,]  A/Inner function arguments",        "normal a,"],
+\       ["[vap],[vip] Visual-mode A/Inner Paragraph",     "normal vap"],
 \       ["[sg] OpenBrowserSmartSearch",                   "call openbrowser#_keymapping_smart_search('n')"],
 \       ["[^-][^-] toggle comment",                       "TComment"],
 \       ["[sr] toggle line",                              "normal sr"],
@@ -177,6 +178,8 @@ let g:unite_source_menu_menus.shortcut = {
 \       ["[sT] toggle tabchar",                           "normal sT"],
 \       ["[qa] record  macro (@a), [q] to quit record",   "normal qa"],
 \       ["[@a] execute macro (@a)",                       "normal @a"],
+\       ["NeoComplCache Enable  (enable  neocomplcache)", "NeoComplCacheUnlock | NeoComplCacheEnable"],
+\       ["              Disable (disable neocomplcache)", "NeoComplCacheDisable | NeoComplCacheLock "],
 \       ["file_mru",                                      "UniteMenuNest file_mru"],
 \       ["history/yank",                                  "UniteMenuNest history/yank"],
 \       ["vimgrep",                                       "UniteMenuNest vimgrep"],
@@ -236,6 +239,8 @@ let g:unite_source_menu_menus.version_controls_svn = {
 "["NeoComplCacheLock    (disable neocomplcache)", "NeoComplCacheLock"],
 "["neobundle", "UniteMenuNest neobundle"],
 "["vimrc", "UniteMenuNest menu:vimrc"],
+"["[a/], [i/]  A/Inner last searched pattern", "normal a/"],
+"["[axb],[ixb] A/Inner X Brackets", "normal axb"],
 
 let g:loaded_unitetunes = 1
 let &cpo = s:save_cpo
