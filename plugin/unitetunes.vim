@@ -161,6 +161,7 @@ let g:unite_source_menu_menus.shortcut = {
 \       ["[s?] VimGrep",                                  "VimGrep"],
 \       ["     Qfreplace",                                "Qfreplace"],
 \       ["[^p] CtrlP",                                    "CtrlP"],
+\       ["     CtrlP MRUFiles",                           "CtrlPMRUFiles"],
 \       ["     CtrlP Buffer",                             "CtrlPBuffer"],
 \       ["     CtrlP Line",                               "CtrlPLine"],
 \       ["     CtrlP ClearCache",                         "CtrlPClearCache"],
