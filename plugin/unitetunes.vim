@@ -155,8 +155,8 @@ let g:unite_source_menu_menus.shortcut = {
 \   "candidates"  : [
 \       ["tabmove 0    (tab move first)",                 "tabm0"],
 \       ["tabmove 1000 (tab move last)",                  "tabm1000"],
-\       ["VimFiler BufferDir",                       "normal so"],
-\       ["         Project",                         "normal sO"],
+\       ["VimFiler BufferDir",                            "VimFilerBufferDir -tab -auto-cd -status"],
+\       ["         Project",                              "VimFilerBufferDir -tab -auto-cd -status -project"],
 \       ["[s/] VimFind",                                  "VimFind"],
 \       ["[s?] VimGrep",                                  "VimGrep"],
 \       ["     Qfreplace",                                "Qfreplace"],
