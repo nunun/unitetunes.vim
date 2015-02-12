@@ -183,8 +183,6 @@ let g:unite_source_menu_menus.shortcut = {
 \       ["[ap],[ip] Visual-mode A/Inner Paragraph",                             "normal vap"],
 \       ["[^-^-] toggle comment",                                               "TComment"],
 \       ["[sg] OpenBrowserSmartSearch",                                         "call openbrowser#_keymapping_smart_search('n')"],
-\       ["[sc] toggle colorcolumn color",                                       "normal sc"],
-\       ["[sC] toggle colorcolumn width",                                       "normal sC"],
 \       ["[sr] toggle line",                                                    "normal sr"],
 \       ["[st] toggle tabspace",                                                "normal st"],
 \       ["[sT] toggle tabchar",                                                 "normal sT"],
