@@ -167,6 +167,8 @@ let g:unite_source_menu_menus.shortcut = {
 \       ["[H],[J],[K],[L] expand opponent selection / cursor (in visual mode)", "normal v"],
 \       ["[W],[B]         expand opponent selection / word   (in visual mode)", "normal v"],
 \       ["[+],[-]         expand opponent selection / block  (in visual mode)", "normal v"],
+\       ["[<CR><char>]    EasyAlign <char>                   (in visual mode)", "normal v<CR>="],
+\       ["[<CR>*<char>]   EasyAlign multiple <char>          (in visual mode)", "normal v<CR>*:"],
 \       ["[H]  enter sHell (for current buffer directory)",                     "normal H"],
 \       ["[sc] toggle colorcolumn color",                                       "normal sc"],
 \       ["[sC] toggle colorcolumn width",                                       "normal sC"],
