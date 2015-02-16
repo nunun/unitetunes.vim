@@ -11,9 +11,9 @@ endif
 let s:save_cpo = &cpo
 set cpo&vim
 
-"==============================================================================
+"=============================================================================
 " UniteSettings
-"==============================================================================
+"=============================================================================
 
 " Unite keymap
 nmap <silent> su :UniteMenuToggle shortcut<CR>
@@ -139,9 +139,9 @@ function! UniteMap(key, value)
 	endif
 endfunction
 
-"==============================================================================
+"=============================================================================
 " UniteMenu
-"==============================================================================
+"=============================================================================
 
 " Initialize Unite menu:*
 if !exists("g:unite_source_menu_menus")
@@ -153,59 +153,60 @@ let g:unite_source_menu_menus.shortcut = {
 \   "description" : "shortcut",
 \   "map"         : function("UniteMap"),
 \   "candidates"  : [
-\       ["[sp] VimFiler BufferDir",                                             "normal sp"],
-\       ["[sP]          Project",                                               "normal sP"],
-\       ["[s/] VimGrep  BufferDir",                                             "normal s/"],
-\       ["[s?]          Project",                                               "normal s?"],
-\       ["              Qfreplace",                                             "Qfreplace"],
-\       ["[^p]  CtrlP",                                                         "CtrlP"],
-\       ["[s^p] CtrlP MRUFiles",                                                "CtrlPMRUFiles"],
-\       ["      CtrlP Buffer",                                                  "CtrlPBuffer"],
-\       ["      CtrlP Line",                                                    "CtrlPLine"],
-\       ["      CtrlP ClearCache",                                              "CtrlPClearCache"],
-\       ["[o]             goto   Opponent selection position (in visual mode)", "normal vo"],
-\       ["[H],[J],[K],[L] expand opponent selection / cursor (in visual mode)", "normal vH"],
-\       ["[W],[B]         expand opponent selection / word   (in visual mode)", "normal vW"],
-\       ["[+],[-]         expand opponent selection / block  (in visual mode)", "normal v+"],
-\       ["[<CR><char>]    EasyAlign <char>                   (in visual mode)", "normal v<CR>="],
-\       ["[<CR>*<char>]   EasyAlign multiple <char>          (in visual mode)", "normal v<CR>*:"],
-\       ["[H]  enter sHell (for current buffer directory)",                     "normal H"],
-\       ["[sc] toggle colorcolumn color",                                       "normal sc"],
-\       ["[sC] toggle colorcolumn width",                                       "normal sC"],
-\       ["tabmove 0    (tab move first)",                                       "tabm0"],
-\       ["tabmove 1000 (tab move last)",                                        "tabm1000"],
-\       ["git",                                                                 "UniteMenuNest menu:version_controls_git"],
-\       ["svn",                                                                 "UniteMenuNest menu:version_controls_svn"],
-\       ["OmniSharp GotoDefinition (.cs only)",                                 "tab split | OmniSharpGotoDefinition"],
-\       ["          StartServer    (.cs only)",                                 "OmniSharpStartServer"],
-\       ["          Rename         (.cs only)",                                 "OmniSharpRename"],
-\       ["[<op>av],  [<op>iv]  operate A/Inner Vertical word column",           "normal vav"],
-\       ["[<op>ac],  [<op>ic]  operate A/Inner Comment",                        "normal vac"],
-\       ["[<op>ax(], [<op>ix(] operate A/Inner X()",                            "normal vax("],
-\       ["[<op>af],  [<op>if]  operate A/Inner Function",                       "normal vaf"],
-\       ["[<op>a,],  [<op>i,]  operate A/Inner function argument (,)",          "normal va,"],
-\       ["[<op>ap],  [<op>ip]  operate A/Inner Paragraph",                      "normal vap"],
-\       ["[^-^-] toggle comment",                                               "TComment"],
-\       ["[sg] OpenBrowserSmartSearch",                                         "call openbrowser#_keymapping_smart_search('n')"],
-\       ["[sr] toggle line",                                                    "normal sr"],
-\       ["[st] toggle tabspace",                                                "normal st"],
-\       ["[sT] toggle tabchar",                                                 "normal sT"],
-\       ["[qa] record  macro (@a), [q] to quit record",                         "normal qa"],
-\       ["[@a] execute macro (@a)",                                             "normal @a"],
-\       ["NeoComplCache Enable  (enable  neocomplcache)",                       "NeoComplCacheUnlock | NeoComplCacheEnable"],
-\       ["              Disable (disable neocomplcache)",                       "NeoComplCacheDisable | NeoComplCacheLock "],
-\       ["file_mru",                                                            "UniteMenuNest file_mru"],
-\       ["history/yank",                                                        "UniteMenuNest history/yank"],
-\       ["vimgrep",                                                             "UniteMenuNest vimgrep"],
-\       ["quickfix",                                                            "UniteMenuNest quickfix"],
-\       ["quickrun (QuickRun)",                                                 "QuickRun"],
-\       ["line",                                                                "UniteMenuNest -start-insert line"],
-\       ["source",                                                              "UniteMenuNest source"],
-\       ["open .vimrc",                                                         $HOME. "/.vimrc"],
-\       ["NeoBundle List",                                                      "NeoBundleList"],
-\       ["          Install",                                                   "NeoBundleInstall"],
-\       ["          Clean",                                                     "NeoBundleClean"],
-\       ["          Update",                                                    "NeoBundleUpdate"],
+\       ["[sp] VimFiler BufferDir",                                              "normal sp"],
+\       ["[sP]          Project",                                                "normal sP"],
+\       ["[s/] VimGrep  BufferDir",                                              "normal s/"],
+\       ["[s?]          Project",                                                "normal s?"],
+\       ["              Qfreplace",                                              "Qfreplace"],
+\       ["[^p]  CtrlP",                                                          "CtrlP"],
+\       ["[s^p] CtrlP MRUFiles",                                                 "CtrlPMRUFiles"],
+\       ["      CtrlP Buffer",                                                   "CtrlPBuffer"],
+\       ["      CtrlP Line",                                                     "CtrlPLine"],
+\       ["      CtrlP ClearCache",                                               "CtrlPClearCache"],
+\       ["[o]             goto   Opponent selection position  (in visual mode)", "normal vo"],
+\       ["[H],[J],[K],[L] expand opponent selection / cursor  (in visual mode)", "normal vH"],
+\       ["[W],[B]         expand opponent selection / word    (in visual mode)", "normal vW"],
+\       ["[+],[-]         expand opponent selection / block   (in visual mode)", "normal v+"],
+\       ["[<CR><delim>]         EasyAlign <delim>             (in visual mode)", "normal v<CR>="],
+\       ["[<CR>*<delim>]        EasyAlign All <delim>         (in visual mode)", "normal v<CR>*="],
+\       ["[<CR><right>*<delim>] EasyAlign Right All <delim>   (in visual mode)", "normal v<CR><Right>*="],
+\       ["[H]  enter sHell (for current buffer directory)",                      "normal H"],
+\       ["[sc] toggle colorcolumn color",                                        "normal sc"],
+\       ["[sC] toggle colorcolumn width",                                        "normal sC"],
+\       ["tabmove 0    (tab move first)",                                        "tabm0"],
+\       ["tabmove 1000 (tab move last)",                                         "tabm1000"],
+\       ["git",                                                                  "UniteMenuNest menu:version_controls_git"],
+\       ["svn",                                                                  "UniteMenuNest menu:version_controls_svn"],
+\       ["OmniSharp GotoDefinition (.cs only)",                                  "tab split | OmniSharpGotoDefinition"],
+\       ["          StartServer    (.cs only)",                                  "OmniSharpStartServer"],
+\       ["          Rename         (.cs only)",                                  "OmniSharpRename"],
+\       ["[<op>av],  [<op>iv]  operate A/Inner Vertical word column",            "normal vav"],
+\       ["[<op>ac],  [<op>ic]  operate A/Inner Comment",                         "normal vac"],
+\       ["[<op>ax(], [<op>ix(] operate A/Inner X()",                             "normal vax("],
+\       ["[<op>af],  [<op>if]  operate A/Inner Function",                        "normal vaf"],
+\       ["[<op>a,],  [<op>i,]  operate A/Inner function argument (,)",           "normal va,"],
+\       ["[<op>ap],  [<op>ip]  operate A/Inner Paragraph",                       "normal vap"],
+\       ["[^-^-] toggle comment",                                                "TComment"],
+\       ["[sg] OpenBrowserSmartSearch",                                          "call openbrowser#_keymapping_smart_search('n')"],
+\       ["[sr] toggle line",                                                     "normal sr"],
+\       ["[st] toggle tabspace",                                                 "normal st"],
+\       ["[sT] toggle tabchar",                                                  "normal sT"],
+\       ["[qa] record  macro (@a), [q] to quit record",                          "normal qa"],
+\       ["[@a] execute macro (@a)",                                              "normal @a"],
+\       ["NeoComplCache Enable  (enable  neocomplcache)",                        "NeoComplCacheUnlock | NeoComplCacheEnable"],
+\       ["              Disable (disable neocomplcache)",                        "NeoComplCacheDisable | NeoComplCacheLock "],
+\       ["file_mru",                                                             "UniteMenuNest file_mru"],
+\       ["history/yank",                                                         "UniteMenuNest history/yank"],
+\       ["vimgrep",                                                              "UniteMenuNest vimgrep"],
+\       ["quickfix",                                                             "UniteMenuNest quickfix"],
+\       ["quickrun (QuickRun)",                                                  "QuickRun"],
+\       ["line",                                                                 "UniteMenuNest -start-insert line"],
+\       ["source",                                                               "UniteMenuNest source"],
+\       ["open .vimrc",                                                          $HOME. "/.vimrc"],
+\       ["NeoBundle List",                                                       "NeoBundleList"],
+\       ["          Install",                                                    "NeoBundleInstall"],
+\       ["          Clean",                                                      "NeoBundleClean"],
+\       ["          Update",                                                     "NeoBundleUpdate"],
 \   ],
 \}
 " PENDING
