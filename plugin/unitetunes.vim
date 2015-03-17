@@ -171,6 +171,7 @@ let g:unite_source_menu_menus.shortcut = {
 \       ["[<CR><delim>]         EasyAlign <delim>                  (in visual mode)", "normal v<CR>="],
 \       ["[<CR>*<delim>]        EasyAlign All <delim>              (in visual mode)", "normal v<CR>*="],
 \       ["[<CR><right>*<delim>] EasyAlign to Right All <delim>     (in visual mode)", "normal v<CR><Right>*="],
+\       ["[s<CR>]               Autoformat",                                          "Autoformat"],
 \       ["[^o] prev jumplist",                                                        "normal ^o"],
 \       ["[^g] next jumplist and output filename",                                    "normal ^g"],
 \       ["[sc] toggle colorcolumn color",                                             "normal sc"],
