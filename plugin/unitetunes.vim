@@ -164,6 +164,7 @@ let g:unite_source_menu_menus.shortcut = {
 \       ["[2^p] CtrlP Buffer",                                                        "CtrlPBuffer"],
 \       ["[3^p] CtrlP Line",                                                          "CtrlPLine"],
 \       ["[9^p] CtrlP ClearCache",                                                    "CtrlPClearCache"],
+\       ["[_]   Switch",                                                              "Switch"],
 \       ["[o]                   goto   Opponent selection position (in visual mode)", "normal vo"],
 \       ["[^h],[^j],[^k],[^l]   expand opponent selection / cursor (in visual mode)", "normal v<C-h>"],
 \       ["[^w],[^b]             expand opponent selection / word   (in visual mode)", "normal v<C-w>"],
