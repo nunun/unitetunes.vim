@@ -165,7 +165,7 @@ let g:unite_source_menu_menus.shortcut = {
 \       ["[3^p] CtrlP Line",                                                          "CtrlPLine"],
 \       ["[9^p] CtrlP ClearCache",                                                    "CtrlPClearCache"],
 \       ["Rename! <filename> (rename current buffer)",                                "Rename"],
-\       ["Ricty FontDir",                                                             "Ricty"],
+\       ["Ricty OpenFontDir",                                                         "Ricty"],
 \       ["      Use",                                                                 "RictyUse"],
 \       ["      Unuse",                                                               "RictyUnuse"],
 \       ["[<C-r>.] Insert last inserted text",                                        "normal <C-r>."],
