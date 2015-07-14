@@ -173,6 +173,7 @@ let g:unite_source_menu_menus.shortcut = {
 \       ["      Use Osaka",                                                           "RictyUse Osaka－等幅:h18:cSHIFTJIS Osaka-Mono:h24"],
 \       ["      Use Migu 1M",                                                         "RictyUse Migu\\ 1M\\ Regular:h18:cSHIFTJIS Migu\\ 1M\\ Regular:h26"],
 \       ["      Use Inconsolata",                                                     "RictyUse Inconsolata:h18:cSHIFTJIS Inconsolata:h26"],
+\       ["      Use Ubuntu Mono",                                                     "RictyUse Ubuntu\\ Mono:h18:cSHIFTJIS Ubuntu\\ Mono:h26"],
 \       ["      Unuse",                                                               "RictyUnuse"],
 \       ["[<C-r>.] Insert last inserted text",                                        "normal <C-r>."],
 \       ["[<C-r>/] Insert last searched text",                                        "normal <C-r>/"],
