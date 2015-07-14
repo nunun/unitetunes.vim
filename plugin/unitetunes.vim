@@ -167,7 +167,7 @@ let g:unite_source_menu_menus.shortcut = {
 \       ["Rename! <filename> (rename current buffer)",                                "Rename"],
 \       ["Ricty OpenFontDir",                                                         "RictyOpenFontDir"],
 \       ["      Use RictyDiminished",                                                 "RictyUse Ricty_Diminished:h18:cSHIFTJIS Ricty_Diminished:h24"],
-\       ["      Use Osaka",                                                           "RictyUse Osaka-Mono:h18:cSHIFTJIS Osaka-Mono:h24"],
+\       ["      Use Osaka",                                                           "RictyUse Osaka－等幅:h18:cSHIFTJIS Osaka-Mono:h24"],
 \       ["      Use Migu 1M",                                                         "RictyUse Migu\\ 1M\\ Regular:h18:cSHIFTJIS Migu\\ 1M\\ Regular:h26"],
 \       ["      Unuse",                                                               "RictyUnuse"],
 \       ["[<C-r>.] Insert last inserted text",                                        "normal <C-r>."],
