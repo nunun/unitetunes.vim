@@ -167,6 +167,7 @@ let g:unite_source_menu_menus.shortcut = {
 \       ["[2^p] CtrlP Buffer",                                                        "CtrlPBuffer"],
 \       ["[3^p] CtrlP Line",                                                          "CtrlPLine"],
 \       ["[9^p] CtrlP ClearCache",                                                    "CtrlPClearCache"],
+\       ["Vinarise (Edit current file as binary file)",                               "Vinarise"],
 \       ["Gist List",                                                                 "Gist -l"],
 \       ["     Post",                                                                 "Gist"],
 \       ["Ricty OpenFontDir",                                                         "RictyOpenFontDir"],
