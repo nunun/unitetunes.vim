@@ -217,7 +217,7 @@ let g:unite_source_menu_menus.shortcut = {
 \       ["YouCompleteMe Bundle Valloric/YouCompleteMe (Win + ManualBuild and Mac)",   "exec 'OpenBrowser https://goo.gl/1eB6jq' | KeySet ycm_bundle Valloric/YouCompleteMe ycm_name YouCompleteMe"],
 \       ["                     nunun/ycmx64           (Win + Prebuild 64bit)",        "exec 'OpenBrowser https://github.com/nunun/ycmx64' | KeySet ycm_bundle nunun/ycmx64 ycm_name ycmx64"],
 \       ["                     Unuse",                                                "KeyDel ycm_bundle ycm_name"],
-\       ["UltiSnips Edit!  (edit snippets)",                                          "exec 'UltiSnipsEdit! '. &ft"],
+\       ["UltiSnips Edit   (edit snippets)",                                          "exec 'UltiSnipsEdit'"],
 \       ["          Update (NeoBundleUpdate vim-snippets-mine)",                      "NeoBundleUpdate vim-snippets-mine"],
 \       ["git",                                                                       "UniteMenuNest menu:version_controls_git"],
 \       ["svn",                                                                       "UniteMenuNest menu:version_controls_svn"],
