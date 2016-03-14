@@ -173,6 +173,7 @@ let g:unite_source_menu_menus.shortcut = {
 \       ["[1^p]  CtrlP MRUFiles",                                                     "CtrlPMRUFiles"],
 \       ["[2^p]  CtrlP Buffer",                                                       "CtrlPBuffer"],
 \       ["[3^p]  CtrlP Line",                                                         "CtrlPLine"],
+\       ["[8^p]  CtrlP VimDirectory",                                                 "call CtrlPCall(8)"],
 \       ["[9^p]  CtrlP ClearCache",                                                   "CtrlPClearCache"],
 \       [" [gd]  YcmCompleter GotoDefinition",                                        "normal gd"],
 \       [" [gI]  YcmCompleter GotoImplementation",                                    "normal gI"],
