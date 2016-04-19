@@ -170,9 +170,9 @@ let g:unite_source_menu_menus.shortcut = {
 \   "description" : "shortcut",
 \   "map"         : function("UniteMap"),
 \   "candidates"  : [
-\       ["[1sh] Enter    Shell",                                                      "normal 1sh"],
+\       ["[1sh]    Enter Shell",                                                      "normal 1sh"],
+\       ["[1sh]          VimShell",                                                   "normal 2sh"],
 \       ["[2sh] VimFiler BufferDir",                                                  "call VimFiler(0)"],
-\       ["[3sh]          Project",                                                    "call VimFiler(1)"],
 \       [" [1/] VimGrep  BufferDir",                                                  ""],
 \       [" [2/]          Project",                                                    ""],
 \       ["               Qfreplace",                                                  "Qfreplace"],
